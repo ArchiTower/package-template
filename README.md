@@ -22,6 +22,17 @@ cd new-package
 pnpm i
 ```
 
+Then, create a branch, make your changes in code, commit it following [gitmoji](https://gitmoji.dev/) & [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) styles.
+
+After that, push it and then create a [Pull Request](https://github.com/ArchiTower/new-package/pulls) with target to `develop` branch.
+
+### Branching
+
+In our repositories we're following the simple solution:
+
+- `main` branch represents stable releases of the libraries or production environment of released applications
+- `develop` branch is for release candidates, betas etc. Here we developing solution - library or app.
+
 ## License
 
 [MIT](./LICENSE.md)
