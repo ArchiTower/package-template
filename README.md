@@ -38,11 +38,11 @@ In our repositories we're following the simple solution:
 [MIT](./LICENSE.md)
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/new-package?style=flat-square
-[npm-version-href]: https://npmjs.com/package/new-package
+[npm-version-src]: https://img.shields.io/npm/v/@architower/new-package?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@architower/new-package
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/new-package?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/new-package
+[npm-downloads-src]: https://img.shields.io/npm/dm/@architower/new-package?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/@architower/new-package
 
 [ci-main-src]: https://img.shields.io/github/actions/workflow/status/ArchiTower/new-package/test.yml?branch=main&style=flat-square
 [ci-develop-src]: https://img.shields.io/github/actions/workflow/status/ArchiTower/new-package/test.yml?branch=develop&style=flat-square
