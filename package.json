@@ -5,12 +5,24 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
     "test": "vitest",
     "test:ci": "vitest run --coverage",
+    "build": "unbuild",
+    "build:ci": "unbuild",
     "release:ci": "semantic-release --ci",
     "prepare": "husky install"
   },
@@ -22,6 +34,9 @@
     }
   ],
   "license": "MIT",
+  "browserslist": [
+    "chrome > 87, firefox > 89, edge > 87, safari > 15.4, ios > 15.4, android > 87, ChromeAndroid > 87, FirefoxAndroid > 89"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:ArchiTower/new-package.git"
@@ -29,23 +44,29 @@
   "publishConfig": {
     "access": "public"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "prettier": "@architower/prettier-config",
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^8.36.0",
-    "eslint-config-architower": "^1.0.0",
-    "prettier": "^2.8.6",
-    "@architower/prettier-config": "^1.0.0",
-    "lint-staged": "^13.2.0",
-    "@commitlint/cli": "^17.4.4",
-    "commitlint-config-gitmoji": "^2.3.1",
-    "gitmoji-cli": "^8.0.0",
+    "eslint": "8.40.0",
+    "eslint-config-architower": "1.2.0",
+    "@microsoft/eslint-formatter-sarif": "2.1.7",
+    "prettier": "2.8.8",
+    "@architower/prettier-config": "1.0.0",
+    "lint-staged": "13.2.2",
+    "@commitlint/cli": "17.6.3",
+    "commitlint-config-gitmoji": "2.3.1",
+    "gitmoji-cli": "8.2.2",
     "husky": "8.0.3",
-    "unbuild": "1.1.2",
-    "vitest": "^0.29.7",
-    "@vitest/coverage-istanbul": "^0.29.7",
-    "typescript": "5.0.2",
-    "semantic-release": "^20.1.1",
-    "semantic-release-config-gitmoji": "^1.4.3"
+    "unbuild": "1.2.1",
+    "vitest": "0.31.1",
+    "@vitest/coverage-istanbul": "0.31.1",
+    "jsdom": "22.0.0",
+    "typescript": "5.0.4",
+    "@total-typescript/ts-reset": "0.4.2",
+    "semantic-release": "21.0.2",
+    "semantic-release-config-gitmoji": "1.4.3"
   }
 }
