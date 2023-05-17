@@ -2,9 +2,7 @@
   "recommendations": [
     "seatonjiang.gitmoji-vscode",
     "zixuanchen.vitest-explorer",
-    "alexkrechik.cucumberautocomplete",
     "dbaeumer.vscode-eslint",
-    "piotr-porzuczek.jest-cucumber-code-generator-extension",
     "esbenp.prettier-vscode"
   ]
 }

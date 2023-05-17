@@ -39,10 +39,5 @@
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[feature]": {
-    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
-  },
-  "cucumberautocomplete.steps": ["**/*.test.ts", "**/*.spec.ts"],
-  "cucumberautocomplete.strictGherkinCompletion": true
+  }
 }
